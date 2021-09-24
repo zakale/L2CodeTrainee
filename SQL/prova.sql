@@ -6,5 +6,4 @@ SELECT COUNT(numhoras) AS qtdehoras, numhoras FROM HORAS GROUP BY numhoras;
 
 SELECT SALA.numsala, HORARIO.horainicio, HORARIO.diasem
 FROM HORARIO 
-INNER JOIN SALA ON HORARIO.numsala = SALA.numsala 
-INNER JOIN HORARIO ON HORARIO.numhoras_HORARIO = HORARIO.horaincio;
+INNER JOIN SALA ON HORARIO.numsala = SALA.numsala;
